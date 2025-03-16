@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import datetime
 
+# new version for github lotto_info
 
 def main():
     today = np.array(get_numbers())

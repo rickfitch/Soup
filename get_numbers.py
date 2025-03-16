@@ -1,3 +1,4 @@
+# new version for github "lotto_info"
 def get_numbers():
     from bs4 import BeautifulSoup
     import requests
@@ -49,7 +50,8 @@ def get_numbers():
         if span.text.isdigit():  # add this check
             mega_millions.append(int(span.text))
     return mega_millions
-    #print(response)
+    #
+    print(response)
     #print(soup.prettify())
 
     links = soup.find_all('a')
