@@ -8,7 +8,7 @@ def main():
     today = np.array(get_numbers())
     draw_number = today[0]
     date = today[1] 
-    print(date)   
+    print(today[0])
 
     df_today = pd.DataFrame(today)
 
@@ -18,10 +18,10 @@ def main():
     except FileNotFoundError:
         df_final = df_today
 
-    df_final.to_excel('today.xlsx', index=False)
+   # df_final.to_excel('today.xlsx', index=False)
 
     print(df_today)
-    df_today.to_csv('today.csv', index=False, header=False, mode='a')
+    #df_today.to_csv('today.csv', index=False, header=False, mode='a')
     
 
 if __name__ == "__main__":
