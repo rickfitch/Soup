@@ -15,6 +15,8 @@ def main():
     df_today = pd.DataFrame(today)
     print(type(df_today))
 
+    # excel file produced
+
     try:
         df_existing = pd.read_excel('today.xlsx')
         df_final = pd.concat([df_existing, df_today])
